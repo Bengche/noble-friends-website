@@ -114,7 +114,7 @@ nav ul li a:hover {
   position: relative;
   margin-top: 70px;
   height: 110vh;
-  background: url("/18.JPG") center/cover no-repeat;
+  background: url("18.JPG") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1211,3 +1211,4 @@ ol li {
 }
 ol {
 }
+
