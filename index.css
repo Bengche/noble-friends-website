@@ -38,6 +38,7 @@ html {
 }
 a {
   text-decoration: none;
+  color: yellow;
 }
 header {
   position: fixed;
@@ -53,6 +54,7 @@ header {
   max-width: 1200px;
   margin: auto;
   display: flex;
+ 
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -66,6 +68,7 @@ header {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   list-style: none;
 }
@@ -74,6 +77,8 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   transition: color 0.3s;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav ul li a:hover {
@@ -87,7 +92,7 @@ nav ul li a:hover {
 }
 #closeMenu {
   font-weight: bolder;
-  color: #6a0dad;
+  color: yellow;
 }
 .mobile-nav {
   position: fixed;
@@ -97,6 +102,7 @@ nav ul li a:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.93);
   display: flex;
+   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -110,10 +116,10 @@ nav ul li a:hover {
 }
 
 .hero {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   position: relative;
-  margin-top: 70px;
-  height: 110vh;
+  margin-top: 100px;
+  height: 80vh;
   background: url("18.JPG") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -123,10 +129,18 @@ nav ul li a:hover {
   text-align: center;
   padding: 0 1rem;
   background-position: top;
-  background-size: auto;
-  background-size: 100%;
-  background-color: white;
-  overflow: hidden;
+  background-size: cover;
+  width: 100vw;
+  /*height: 100%;*/
+  /*height: 100vh;*/
+  /*min-height: 100vh;*/
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-attachment: scroll;*/
+  text-align: center;
+  /*padding: 0 1rem;*/
 }
 .dark-overlay {
   position: absolute;
@@ -134,10 +148,9 @@ nav ul li a:hover {
   bottom: 0;
   right: 0;
   left: 0;
-  /* height: 90%; */
-  /* width: 100%; */
-  background: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
@@ -180,7 +193,9 @@ nav ul li a:hover {
     display: block;
   }
   .hero {
+      /*height: 200vh;*/
     background-position: center;
+    /*width: 100%;*/
   }
 }
 
@@ -449,6 +464,13 @@ nav ul li a:hover {
   padding: 5rem 1rem;
   text-align: center;
   animation: fadeInUp 1.2s ease-in-out;
+}
+.stats1{
+    color: #4b0082;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    
 }
 
 .stats-container {
@@ -1211,4 +1233,3 @@ ol li {
 }
 ol {
 }
-
