@@ -1,0 +1,152 @@
+/* about.css */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+}
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.about-hero {
+  /* margin-top: 100px; */
+  position: relative;
+  background: url("/Noble\ Friends\ 8.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background: linear-gradient(to right, #300046, #6e00a6); */
+  color: white;
+  padding: 5rem 1.5rem 3rem;
+  text-align: center;
+}
+.about-dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.about-hero h1 {
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+  position: relative;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+  /* padding: 2rem 1.5rem; */
+}
+
+.about-objectives {
+  margin-bottom: 40px;
+  margin: 40px auto;
+}
+.about-mission {
+  margin-top: 0;
+}
+
+.about-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.about-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 2rem; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-flex.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-flex .text {
+  flex: 1 1 55%;
+}
+
+.about-flex .image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-flex .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.core-values {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.core-values li {
+  margin-bottom: 1rem;
+  background: #f4f0ff;
+  padding: 1rem;
+  border-left: 5px solid #5e00d8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-footer {
+  background-color: #1a1a2e;
+  color: #bbb;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-flex .image img {
+    max-width: 90%;
+  }
+}
