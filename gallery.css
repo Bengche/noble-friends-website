@@ -17,6 +17,7 @@ body {
   color: white;
   padding: 4rem 1.5rem 2rem;
   text-align: center;
+  z-index: 1;
 }
 .gallery-dark {
   position: absolute;
@@ -26,7 +27,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .gallery-header h1 {
@@ -61,6 +62,7 @@ body {
   object-fit: cover;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
 }
 
 .gallery-img:hover {
@@ -143,4 +145,3 @@ body {
     right: 25px;
   }
 }
-
