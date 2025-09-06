@@ -14,7 +14,7 @@ body {
 .about-hero {
   /* margin-top: 100px; */
   position: relative;
-  background: url("/Noble\ Friends\ 8.jpg");
+  background: url("Noble\ Friends\ 8.jpg");
   background-position: center;
   background-size: cover;
   /* background: linear-gradient(to right, #300046, #6e00a6); */
@@ -150,3 +150,4 @@ p {
     max-width: 90%;
   }
 }
+
