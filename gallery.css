@@ -9,7 +9,7 @@ body {
 .gallery-header {
   /* margin-top: 100px; */
   position: relative;
-  background: url("/Noble\ friends\ 9.jpg");
+  background: url("Noble\ friends\ 9.jpg");
   background-size: cover;
   background-position: center;
 
@@ -143,3 +143,4 @@ body {
     right: 25px;
   }
 }
+
