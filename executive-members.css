@@ -11,7 +11,7 @@ body {
 .executives-hero {
   /* margin-top: 100px; */
   position: relative;
-  background: url("/Mboudjem\ Lionel.jpg");
+  background: url("Mboudjem\ Lionel.jpg");
   background-position: center;
   background-size: cover;
 
@@ -119,3 +119,4 @@ body {
     height: 100px;
   }
 }
+
